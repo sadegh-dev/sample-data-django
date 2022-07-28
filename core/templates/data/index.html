@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 2px solid #adadad;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+{% for dt in data %}
+<table>
+    <tr>
+        <th>id</th>
+        <th>{{ dt.id }}</th>
+    </tr>
+    <tr>
+        <td>the_integer</td>
+        <td>{{ dt.the_integer }}</td>
+    </tr>
+    <tr>
+        <td>the_pos_integer</td>
+        <td>{{ dt.the_pos_integer }}</td>
+    </tr>
+    <tr>
+        <td>the_float</td>
+        <td>{{ dt.the_float }}</td>
+    </tr>
+    <tr>
+        <td>the_json</td>
+        <td>{{ dt.the_json }}</td>
+    </tr>
+    <tr>
+        <td>the_boolean</td>
+        <td>{{ dt.the_boolean }}</td>
+    </tr>
+    <tr>
+        <td>the_char</td>
+        <td>{{ dt.the_char }}</td>
+    </tr>
+    <tr>
+        <td>the_text</td>
+        <td>{{ dt.the_text }}</td>
+    </tr>
+    <tr>
+        <td>the_time</td>
+        <td>{{ dt.the_time }}</td>
+    </tr>
+    <tr>
+        <td>the_date</td>
+        <td>{{ dt.the_date }}</td>
+    </tr>
+    <tr>
+        <td>the_date_time</td>
+        <td>{{ dt.the_date_time }}</td>
+    </tr>
+    <tr>
+        <td>the_email</td>
+        <td>{{ dt.the_email }}</td>
+    </tr>
+    <tr>
+        <td>the_slug</td>
+        <td>{{ dt.the_slug }}</td>
+    </tr>
+    <tr>
+        <td>the_url</td>
+        <td>{{ dt.the_url }}</td>
+    </tr>
+</table><br /><br />
+{% endfor %}
+</body>
+</html>
