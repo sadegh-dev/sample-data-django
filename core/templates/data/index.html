@@ -40,7 +40,7 @@ tr:nth-child(even) {
     </tr>
     <tr>
         <td>the_json</td>
-        <td>{{ dt.the_json }}</td>
+        <td>{{ dt.the_json|default:"mynone" }}</td>
     </tr>
     <tr>
         <td>the_boolean</td>
@@ -52,7 +52,7 @@ tr:nth-child(even) {
     </tr>
     <tr>
         <td>the_text</td>
-        <td>{{ dt.the_text }}</td>
+        <td>{{ dt.the_text|join:"#" }}</td>
     </tr>
     <tr>
         <td>the_time</td>
